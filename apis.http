@@ -1,0 +1,33 @@
+###Register New User Route
+POST  http://localhost:8000/signup
+Content-Type: application/json
+
+{
+  "name": "Name"
+  "email": "email@gmail.com",
+  "password": "1234"
+}
+
+
+###Login Existing User Route
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+  "email": "email@gmail.com",
+  "password": "1234"
+}
+
+
+###Refresh Token Route
+POST http://localhost:8000/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": [ENTER YOUR REFRESH TOKEN WHICH IS GENERATED]
+}
+
+
+###Validate Token Route
+GET http://localhost:8000/validate-token
+authorization: Bearer [ENTER YOUR ACCESS TOKEN WHICH IS GENERATED]
